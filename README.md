@@ -33,3 +33,19 @@ padding填充 margin边缘
 盒子模型、调试工具相关操作
 padding属性 margin 属性
 padding复合属性 margin复合属性
+
+## 10.15
+
+[爱心]各位同学们，本节课的重点知识来袭，请注意查收~！
+⚠本节课英文单词为：
+border 边框 groove凹槽
+dot圆点 dashed虚线
+孩子们可以利用晨读/晚读时间再次复习记忆
+为英语学习打下夯实基础。
+
+⚠属性：
+border属性 border-left属性
+border-top属性 border-right属性
+border-bottom属性
+⚠本节课所学编程知识：
+为元素的边框添加边框并设置样式
