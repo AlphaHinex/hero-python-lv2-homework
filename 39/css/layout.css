@@ -1,0 +1,267 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.container {
+	width: 375px; height: 685px;
+	background: url(../imgs/bg.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	margin: 50px auto;
+}
+/*内容*/
+.content {
+	width: 300px; height: 320px;
+	margin: 0px auto;
+	margin-top: 30px;
+	position: relative;
+}
+/*红底*/
+.red {
+	width:145px; height: 100%; 
+	position: absolute;
+	animation: hide 3s;
+	animation: red 1s linear;
+}
+.redImg {
+	width: 145px; height: 100%;
+}
+/*蓝底*/
+.blue {
+	width: 100%; height: 100%;
+	position: absolute;
+	animation: hide 3s;
+	animation: blue 1s linear;
+
+}
+.blueImg {
+	width: 100%; height: 100%;
+}
+/*黄底*/
+.yellow {
+	width: 100%; height: 185px;
+	position: absolute; top: 135px;
+	animation: hide 3s;
+	animation: yellow 1s linear;
+}
+.yellowImg {
+	width: 100%; height: 185px;
+}
+.hBlue {
+	width:212px; height: 119px;
+	position: relative; top: -121px; left: 88px;
+}
+.hBlueImg {
+	width: 100%; height: 100%;
+}
+/*灰角*/
+.tGray {
+	width: 70px; 
+	position: absolute; top: 81px; left: 75px;
+	animation: hide 3s;
+	animation: tGray 1s linear;
+}
+.tGrayImg {
+	width: 100%; 
+}
+/*ram*/
+.ram {
+	width: 75%;
+	position: absolute; left: 75px; top: 127px;
+	animation: hide 3s;
+	animation: ram 3s linear;
+}
+.ramImg {
+	width: 100%;
+}
+/*墨绿色条*/
+.green {
+	width: 78px; height: 282px;
+	position: relative; left: 122px;
+	animation: hide 3s;
+	animation: green 1s linear;
+}
+.greenImg {
+	width: 100%; height: 100%;
+}
+/*灰色条*/
+.gray {
+	width: 37px; height: 162px;
+	position: relative; top: -282px; left: 164px;
+	animation: hide 3s;
+	animation: vGray 1s linear;
+}
+.grayImg {
+	width: 100%; height: 100%;
+}
+/*蓝色D*/
+.dBlue {
+	width: 25%; top: -320px;
+	position: relative;
+	animation: hide 3s;
+	animation: dBlue 1s linear;
+}
+.dBlueImg {
+	width: 100%; 
+}
+.dWhite {
+	width: 15%; 
+	position: relative; top:-410px; left: 15px;
+	animation: hide 3s;
+	animation: dWhite 2s linear;
+}
+.dWhiteImg {
+	width: 100%;
+}
+/*R中红色块*/
+.dRed {
+	width: 8%;
+	position: relative; top: -476px; left: 88px;
+	animation: hide 3s;
+	animation: dRed 1s linear;
+}
+.dRedImg {
+	width: 100%;
+}
+/*dream中的e*/
+.e {
+	width: 42px; height: 77px;
+	position: relative; top: -515px; left: 122px;
+	animation: hide 3s;
+	animation: e 3s linear;
+}
+.eImg {
+	width: 100%; height: 100%;
+}
+/*marker*/
+
+.makerImg {
+	width: 100%; height: 100%;
+}
+.maker {
+	width: 211px; height: 39px;
+	position: relative; top: -447px; left: 89px;
+	animation: hide 3s;
+}
+
+
+@keyframes hide {
+	0% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/*动画*/
+
+@keyframes red {
+	0% { transform: translateX(-300px); }
+	100% { transform: translateX(0px); }
+}
+@keyframes yellow {
+	0% { transform: translateY(400px); }
+	100% { transform: translateY(0px); }
+}
+@keyframes blue {
+	0% { transform: translateX(400px); }
+	100% { transform: translateX(0px); }
+}
+@keyframes tGray {
+	0% { transform: translateX(400px); transform: translateY(100px);}
+	100% { transform: translateX(0px); transform: translateY(0px);}
+}
+@keyframes green {
+	0% { transform: translateY(-400px);}
+	100% { transform: translateY(0px);}
+}
+@keyframes vGray {
+	0% { left: 400px; transform: translateY(-400px);}
+	100% { left: 164px; transform: translateY(0px);}
+}
+@keyframes dBlue {
+	0% { left: 40px; transform: translateY(-200px);}
+	100% { left: 0px; transform: translateY(0px);}
+}
+@keyframes dRed {
+	0% { left: 40px; transform: translateY(-100px);}
+	100% { left: 88px; transform: translateY(0px);}
+}
+@keyframes ram {
+	0%{ left: 25px; top: 0px; transform: scale(2); opacity: 0; }
+	50% { left: 25px; top: 0px; transform: scale(2); opacity: 0;}
+	100% { left: 75px; top: 127px; transform: scale(1); opacity: 1;}
+}
+@keyframes e {
+	0%{ left: 225px; top: -900px; transform: scale(2); opacity: 0; }
+	60% { left: 225px; top: -900px; transform: scale(2); opacity: 0;}
+	100% { left: 122px; top: -515px; transform: scale(1); opacity: 1;}
+}
+
+@keyframes dWhite {
+	0%{ left: -45px; top: -600px; transform: scale(2); opacity: 0; }
+	40% { left: -45px; top: -600px; transform: scale(2); opacity: 0;}
+	100% { left: 15px; top: -410px; transform: scale(1); opacity: 1;}
+}
+
+/* *************** 1、marker 动画 *************** */
+
+@keyframes maker {
+	0%{ left: 15px; top: -200px; transform: scale(2); opacity: 0; }
+	80% { left: 15px; top: -200px; transform: scale(2); opacity: 0;}
+	100% { left: 89px; top: -447px; transform: scale(1); opacity: 1;}
+}
+
+/* *********** maker ************** */
+.maker {
+	animation: maker 3s linear;
+}
+
+/* *************** 2、大标题动画 *************** */
+
+@keyframes man {
+	0% { transform: scale(0); }
+	25% { transform: scale(1); }
+	40% { transform: scale(1.2); }
+	65% { transform: scale(0.8); }
+	80% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+/* *************** 3、小标题动画 *************** */
+
+@keyframes smallTitleImg {
+	0% { opacity: 0; }
+	80% { opacity: 0; }
+	100 { opacity: 1; }
+}
+
+
+/* *********** 5、底下小按钮弹跳 ************ */
+
+@keyframes bounds {
+	0% { transform: translateY(0px); }
+	25% { transform: translateY(10px); }
+	50% { transform: translateY(0px); }
+	65% { transform: translateY(5px); }
+	80% { transform: translateY(0px); }
+	90% { transform: translateY(3px); }
+	100% { transform: translateY(0px); }
+}
+
+/* *********** 底部按钮 ************ */
+.slider {
+	animation: bounds 1s infinite;
+}
+
+/* *********** 大标题 ************** */
+.big {
+	animation: man 1.5s linear 3s;
+}
+/* *********** 小标题 ************** */
+.small {
+	animation: smallTitleImg 6s linear;
+}
+
+
+
+
+

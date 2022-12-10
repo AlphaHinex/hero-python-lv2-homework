@@ -1,0 +1,32 @@
+一、 在class为container的<div>中再添加一个class为title的<div>，
+         在class为title的<div>中添加两个<div>,class分别为small和big；
+	在class为small的<div>中添加一张图片，路径为imgs/word.png；
+	在class为big的<div>中也添加一张图片，路径为imgs/man.png;
+	
+二、 1、为class为title的<div>设置样式：文本水平居中；上外边距为50px；
+	2、为class为small的<div>设置样式：宽度为375px；
+	3、为class为big的<div>设置样式：宽度为375px；上外边距为20px；
+	4、为class为small的<div>里的图片设置样式： 宽度为200px；高度为20px；
+	5、为class为big的<div>里的图片设置样式：宽度为300px；高度为40px；
+	
+三、 1、继续再添加一个class为bottom的<div>；
+    2、在这个<div>里添加一个<form>和两个<div>，
+               这两个<div>的class分别为"slider"，"music"；
+    3、<form>中添加一个<input>元素，type类型为 text，提示信息为 "搜索……"
+    4、在class为slider的<div>中添加一张图片，路径为imgs/jt.png；
+             在class为music的<div>中也添加一张图片，路径为imgs/music.png ; 
+             
+四、1、为class为bottom的<div>设置样式：宽度为375px；
+   2、为<form>设置样式：内边距为5px；圆角边框为3px；上外边距为5px；文本居中显示;
+   3、为<form>里的<input>设置样式：
+            高度为30px；宽度为300px；
+            边框宽度为1px，边框样式为实线，边框颜色为 #c8c8c8；
+            圆角边框为3px；
+            
+五、 1、为class为slider的<div>设置样式：文本水平居中；上外边距50px；
+	2、为class为music的<div>设置样式：
+               右浮动；上外边距为-50px；右外边距15px；
+               绑定关键帧动画 revolve，动画持续时间2s，匀速，无限循环；
+       (animation: revolve 2s linear infinite;)
+	3、自定义关键帧动画 revolve，开始的时候旋转角度为0度，结束的时候旋转角度为 360度；
+       (transform:rotate( 0deg );)
