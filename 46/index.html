@@ -23,19 +23,19 @@
 	<body>
 		<input type="button" value="显示" id="btn1"/>
 		<input type="button" value="隐藏" id="btn2" />
-		<div id="div1"></div>
+		<div id="div1" style="display:block;"></div>
 	</body>
 	<script>
 		var btn1 = document.getElementById('btn1');
 		var btn2 = document.getElementById('btn2');
 		var div1 = document.getElementById('div1');
 		btn1.onclick = function (){
-			if (div1.style.display = 'none'){
+			if (div1.style.display === 'none'){
 				 div1.style.display = 'block';
 			}
 		}
 		btn2.onclick = function (){
-			if (div1.style.display = 'block'){
+			if (div1.style.display === 'block'){
 				div1.style.display = 'none';
 			}
 		}
