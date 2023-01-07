@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<style>
+			#box1 {
+				width: 50px;
+				height: 50px;
+				background-color: skyblue;
+				position: relative;
+				top: 100px;
+				border-radius: 25px;
+			}
+			#box2 {
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "box2">
+			<div id = "box1"></div>
+		</div>
+		<script>
+			var box = document.getElementById('box1');
+			box.speedX = 3;
+			box.speedY = 8
+			box.l = box.offsetLeft;
+			box.t = box.offsetTop;
+			setInterval(function (){
+				box.l += box.speedX;
+				box.t += box.speedY;
+				console.log(box.l);
+				console.log(box.t);
+				if (box.l>250){
+					box.speedX *= -1;
+				}
+				if (box.l<0){
+					box.speedX = -1*box.speedX;
+				}
+				if (box.t>250) {
+					box.speedY *= -1;
+				}
+				if (box.t<0){
+					box.speedY = -1*box.speedY;
+				}
+				box.style.left = box.l+'px';
+				box.style.top = box.t+'px';
+			},10)
+		</script>
+	</body>
+</html>
