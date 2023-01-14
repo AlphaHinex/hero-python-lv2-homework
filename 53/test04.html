@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<style>
+			.wrap {
+				width: 450px;
+				height: 480px;
+				margin: 100px auto;
+				position: relative;
+			}
+			span {
+				display: inline-block;
+				width: 220px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: blue;
+			}
+			img {
+				position: absolute;
+				bottom: 20px;
+				left: 25px;
+				display: none;
+				width: 400px;
+				height: 400px;
+			}
+			span:hover {
+				border: 2px solid blue;
+				border-radius: 20px;
+			}
+			.active{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<span>乒乓小将</span>
+			<span>狮舞东方</span>
+			<img src="https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/112/112-bigskin-8.jpg"/>
+			<img src="https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/112/112-bigskin-6.jpg"/>
+		</div>
+		<script>
+			var btn = document.getElementsByTagName('span');
+			var arr = document.getElementsByTagName('img');
+			arr[0].className = 'active';
+			for (var i = 0;i<btn.length;i++){
+				btn[i].index = i;
+				btn[i].onclick = function (){
+					arr[0].className = arr[1].className = '';
+					arr[this.index].className = 'active';
+				}
+			}
+		</script>
+	</body>
+</html>
