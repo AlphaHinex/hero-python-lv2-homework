@@ -2,12 +2,34 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>hero</title>
 		<style>
-			
+			.p{
+				width: 150px;
+				height: 100px;
+			}
+			div{
+				width: 150px;
+				height: 100px;
+				overflow: scroll;
+			}
 		</style>
 	</head>
 	<body>
-		
+	<div id="d">
+		<img class="p" src="images/image1.jpg">
+		<img class="p" src="images/image2.jpg">
+		<img class="p" src="images/image3.jpg">
+	</div>
+	<script>
+		var a = document.getElementById('d')
+		setInterval(function(){
+			console.log(a.scrollTop);
+			a.scrollTop = a.scrollTop+1;
+			if (a.scrollTop >= 216){
+				a.scrollTop = 0
+			}
+		}, 20);
+	</script>
 	</body>
 </html>
