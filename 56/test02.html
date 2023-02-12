@@ -7,27 +7,37 @@
 			.p{
 				width: 150px;
 				height: 100px;
+				float: left;
 			}
-			div{
+			#a{
+				width: 750px;
+				height: 100px;
+			}
+			#b{
 				width: 150px;
 				height: 100px;
-				overflow: scroll;
+				overflow: hidden;
 			}
 		</style>
 	</head>
 	<body>
-	<div id="d">
-		<img class="p" src="images/image1.jpg">
-		<img class="p" src="images/image2.jpg">
-		<img class="p" src="images/image3.jpg">
+	<div id="b">
+		<div id="a">
+			<img class="p" src="images/image1.jpg">
+			<img class="p" src="images/image2.jpg">
+			<img class="p" src="images/image3.jpg">
+			<img class="p" src="images/image4.jpg">
+			<img class="p" src="images/image1.jpg">
+		</div>
 	</div>
+
 	<script>
-		var a = document.getElementById('d')
+		var a = document.getElementById('b')
 		setInterval(function(){
-			console.log(a.scrollTop);
-			a.scrollTop = a.scrollTop+1;
-			if (a.scrollTop >= 216){
-				a.scrollTop = 0
+			console.log(a.scrollLeft);
+			a.scrollLeft = a.scrollLeft+1;
+			if (a.scrollLeft >= 600){
+				a.scrollLeft = 0
 			}
 		}, 20);
 	</script>
