@@ -6,7 +6,13 @@
 	</head>
 	<body>
 		<script>
-			
+			let str = prompt('请输入内容')
+			let reg = /^\d{5,11}$/;
+			if (reg.test(str)){
+				alert('格式正确');
+			}else {
+				alert('格式错误');
+			}
 		</script>
 	</body>
 </html>
