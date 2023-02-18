@@ -1,0 +1,56 @@
+#container {
+	width: 1350px;
+	height: 650px;
+	margin: auto;
+	position: relative;
+}
+#container {
+	margin: 0;
+}
+#plane1 {
+	position: absolute;
+}
+
+#plane3 {
+	position: absolute;
+	top: 100px;
+	left: 400px;
+}
+#plane4 {
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	z-index: 3;
+}
+#plane5 {
+	background-size: 250% 100%;
+	width: 180px;
+	height: 300px;
+}
+#download {
+	width: 260px;
+	height: 130px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+#plane2 {
+	width: 700px;
+	height: 600px;
+	position: absolute;
+	left: 600px;
+}
+#eye {
+	position: absolute;
+}
+#bomb_eye {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 485px;
+	left: 470px;
+}
+
+/*添加样式*/
