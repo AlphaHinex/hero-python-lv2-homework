@@ -15,8 +15,17 @@
 		<div id="div1">
 			我是div1
 		</div>
+		<input type="submit" id="btn" value="发表">
+		<input type="text" id="word">
 		<script>
-			
+			var b = document.getElementById('word');
+			var a = document.getElementById('btn');
+			var div = document.getElementById('div1');
+			a.onclick = function (){
+				var newDiv = document.createElement('p');
+				newDiv.innerHTML = b.value;
+				div.append(newDiv);
+			}
 		</script>
 	</body>
 </html>
